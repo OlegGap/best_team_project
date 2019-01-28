@@ -1,10 +1,17 @@
 /*
    Import partials below
 */
+@import './reset';
 @import './normalize';
+@import './fonts';
+
+/*
+    Blocks
+*/
 @import './header/index';
+@import './main-inform/index';
 @import './about-me/index';
-@import './about-me/index';
-@import './about-me/index';
-@import './about-me/index';
-@import './about-me/index';
+@import './skills/index';
+@import './critaries/index';
+@import './programm/index';
+@import './detalis/index';
