@@ -1,0 +1,120 @@
+.programm__title{
+    font-family: 'Acrom-ExtraBold';
+    @include font-size(13.8pt);
+    margin-left: 3%; 
+    color: #fff;
+    background-color: #000;
+    line-height: 45px;  
+  } 
+.slider__wrapper{
+    display: flex;
+    margin-left: 3%; 
+    margin-top: 15px;
+  }
+.slider__item{
+  display: flex;
+}
+.programm__text-wrapper{
+  width: 70%;
+  margin-left: 20px;
+  position: relative;
+  &::after{   
+    content: "";
+    position: absolute;
+    left: -28px;     
+    top: 55px;     
+    width: 10px;
+    height: 10px;
+    background: #f26228;
+  }
+}
+.programm__number{
+  display: inline-block;
+  position: relative;  
+  font-family: 'Acrom-ExtraBold';
+  @include font-size(18pt);
+  width: 64px;  
+  direction:rtl;
+  overflow: hidden;  
+}
+.programm__number--1{ 
+  width: 59px;
+}
+.programm__text--title{ 
+  font-family: 'Acrom-ExtraBold';
+  @include font-size(6pt);
+  text-transform: uppercase;
+} 
+.programm__text--1, .programm__text--2, .programm__text--3, .programm__text--4, .programm__text--5{
+  font-family: 'AcromRegular'; 
+  font-size: 10pt;
+}
+.programm__text--1, .programm__text--2, .programm__text--3, .programm__text--5{
+  margin-top: 15px;
+}
+.programm__text--4{
+  margin-top: 4px;
+}
+.programm__text--3 span{ 
+  background-color:#f26228;
+}
+
+@media screen and (min-width:0px) and (max-width:960px){
+/* ОСНОВНЫЕ СТИЛИ */
+.slider {
+    position: relative;
+    overflow: hidden;
+  }
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease; /* 0.6 длительность смены слайда в секундах */
+  }
+  .slider__item {
+    flex: 0 0 100%; /* определяет количество активных слайдов (в данном случае 2 */
+    max-width: 100%;
+    /* определяет количество активных слайдов (в данном случае 2 */
+  }
+  /* СТИЛИ ДЛЯ КНОПОК "НАЗАД" И "ВПЕРЁД" */
+  .slider__control {
+    position: absolute;
+    display: none;  
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    width: 40px; /* ширина кнопки */
+    height: 50px; /* высота кнопки */ 
+    opacity: .5; /* прозрачность */
+    background: #000; /* цвет фона */
+  }
+  .slider__control_show {
+    display: flex;
+  }
+  .slider__control:hover,
+  .slider__control:focus {
+    text-decoration: none;
+    outline: 0;
+    opacity: .9; /* прозрачность */
+  }
+  .slider__control_left {
+    left: 0;
+  }
+  .slider__control_right {
+    right: 0;
+  }
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px; /* ширина иконки (стрелочки) */
+    height: 20px;   /* высота иконки (стрелочки) */
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  .slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+}

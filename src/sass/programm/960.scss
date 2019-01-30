@@ -1,0 +1,42 @@
+@media screen and (min-width:961px){
+    @mixin font-size($font-size){
+        font-size: ($font-size * 3);
+    }
+    .programm{
+        margin-top: 80px;
+    }
+    .slider__control{
+        display: none;
+    }
+    .programm__title-wrappper{
+        display: flex;
+        justify-content: center; 
+    }
+    .programm__title-wrappper2{  
+        min-width: 960px;
+        width: 80%;
+        max-width: 1440px;   
+    } 
+    .programm__title{
+        margin-left: 0;
+    }
+    .slider{
+        display: flex;
+        justify-content: center; 
+    }
+    .slider__wrapper{
+        display: flex; 
+        flex-wrap: wrap; 
+        min-width: 960px; 
+        width: 80%; 
+        margin: 0; 
+    }
+    .slider__item{
+        width: 33.33%;       
+        margin-top: 50px; 
+    }
+    .programm__title{
+    @include font-size(13.8pt);
+    }
+     
+}
