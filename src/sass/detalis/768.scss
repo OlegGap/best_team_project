@@ -1,0 +1,13 @@
+@media screen and (min-width:768px){
+    .details__button{
+        width: 335px;
+        margin-top: 55px; 
+        @include font-size(7pt);
+    }
+    .details-wrapper{
+        height: 290px; 
+        width: 420px; 
+        margin: auto;
+        box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.05); 
+    }
+}

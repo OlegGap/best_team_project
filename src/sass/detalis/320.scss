@@ -1,0 +1,103 @@
+.details{ 
+    margin-top: 70px;
+}
+.detils-wrapper{
+    height: 290px; 
+}
+.details__text{
+    min-width: 340px;
+    display: flex;  
+    justify-content: center;
+}
+.details--1 ,.details--2{
+    width:170px;  
+    height:200px; 
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Acrom-ExtraBold';
+    @include font-size(4.5pt);  
+}  
+.details--1{
+     text-align: end;
+     color: #fff;
+}
+.details__text--1 span{ 
+    background-color: #000;
+} 
+.details__text--1:nth-child(1), .details__text--2:nth-child(1){
+    margin-top: 35px; 
+} 
+.details__text--1:nth-child(2){
+    margin-top: 25px; 
+    line-height: 18px;
+} 
+.details__text--1:nth-child(3){
+    margin-top: 22px;   
+}
+.details__text--2:nth-child(2){
+    margin-top: 48px;  
+} 
+.details__text--2:nth-child(3){
+    margin-top: 23px;   
+    line-height: 15px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 62px; 
+        height: 4px;  
+        left: 0;   
+        top: 5px;        
+        background: #f07331; 
+        transform: rotate(-10deg);      
+    }
+} 
+.details__text--2{
+    margin-left: 8px;   
+}
+.details__bonus-wrapper{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.details__bonus{
+    position: relative;
+    color: #ed5f12;
+    font-family: 'AcromMedium';
+    line-height: 25px;      
+    @include font-size(6pt);
+    margin-left: 50px;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 45px;  
+        height: 4px;    
+        left: -60px;     
+        top: 25px;        
+        background: #000;  
+        transform: rotate(-60deg);       
+    }
+}
+.details__button-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.details__button{
+    margin-top: 40px;  
+    width: 90%;  
+    height: 46px; 
+    background-color: #f07331;
+    border: none;
+    font-family: 'Acrom-ExtraBold'; 
+    color: #fff;
+    @include font-size(6pt); 
+    margin-bottom: 90px;  
+    box-shadow: -2px 7px 5px 0px rgba(240,115,49,0.18); 
+    transition: box-shadow, background-color 0.2s linear;
+    &:hover{
+        box-shadow: 0px 0px 19px 5px rgba(240,115,49,0.23);
+        background-color: #ed5f12;
+    }
+}
