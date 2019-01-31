@@ -1,22 +1,22 @@
 .programm__title{
     font-family: 'Acrom-ExtraBold';
-    @include font-size(13.8pt);
-    margin-left: 3%; 
-    color: #fff;
+    @include font-size(12pt);
+    margin-left: 2%;      
+    color: #fff; 
     background-color: #000;
     line-height: 45px;  
   } 
 .slider__wrapper{
     display: flex;
-    margin-left: 3%; 
-    margin-top: 15px;
+    margin-left: 3%;         
+    margin-top: 20px;  
   }
 .slider__item{
   display: flex;
 }
 .programm__text-wrapper{
-  width: 70%;
-  margin-left: 20px;
+  width: 65%;
+  margin-left: 20px;  
   position: relative;
   &::after{   
     content: "";
@@ -25,7 +25,7 @@
     top: 55px;     
     width: 10px;
     height: 10px;
-    background: #f26228;
+    background: #f26228; 
   }
 }
 .programm__number{
@@ -33,29 +33,29 @@
   position: relative;  
   font-family: 'Acrom-ExtraBold';
   @include font-size(18pt);
-  width: 64px;  
+  width: 64px;   
   direction:rtl;
   overflow: hidden;  
 }
 .programm__number--1{ 
-  width: 59px;
+  width: 57px; 
 }
 .programm__text--title{ 
   font-family: 'Acrom-ExtraBold';
   @include font-size(6pt);
   text-transform: uppercase;
 } 
-.programm__text--1, .programm__text--2, .programm__text--3, .programm__text--4, .programm__text--5{
+.programm__text--1, .programm__text--2, .programm__text--3{
   font-family: 'AcromRegular'; 
   font-size: 10pt;
 }
-.programm__text--1, .programm__text--2, .programm__text--3, .programm__text--5{
+.programm__text--1, .programm__text--2{
   margin-top: 15px;
 }
-.programm__text--4{
+.programm__text--3{
   margin-top: 4px;
 }
-.programm__text--3 span{ 
+.programm__text--2 span{ 
   background-color:#f26228;
 }
 
