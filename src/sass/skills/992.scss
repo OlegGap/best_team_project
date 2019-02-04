@@ -1,0 +1,13 @@
+@media screen and (min-width: 991px) {
+  .skills {
+    .wrapper {
+      width: 80%;
+      min-width: 991px;
+      margin: 0 auto;
+    }
+
+    &__content {
+      width: 40%;
+    }
+  }
+}
