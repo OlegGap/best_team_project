@@ -1,0 +1,13 @@
+@media screen and (min-width: 479px) {
+  .cretaries {
+    &__tittle {
+      width: 465px;
+      line-height: 40px;
+    }
+
+    .slider__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}

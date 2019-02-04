@@ -1,0 +1,20 @@
+@media screen and (min-width:768px) and (max-with:960px) {
+    .introduction__part {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-bottom: 60px;
+    }
+
+    .introduction__part--text {
+        width: 310px;
+        padding-top: 60px;
+    }
+
+    .icon__square::after {
+        content: '';
+        margin-left: 6px;
+        margin-top: 30px;
+    }
+
+}

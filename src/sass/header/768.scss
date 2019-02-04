@@ -1,0 +1,23 @@
+@media screen and (min-width:768px) {
+   .page__nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .list__item--link {
+        padding-right: 24px;
+    }
+
+    .icon {
+        right: 120px;
+    }
+
+    .icon--source {
+        right: 218px;
+    }
+
+
+    
+
+}

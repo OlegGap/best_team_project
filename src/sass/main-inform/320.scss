@@ -1,0 +1,90 @@
+.section__first {
+  overflow: hidden;
+}
+
+.main__title--word{
+  font-family: 'Acrom-ExtraBold';
+  @include font-size(12pt);
+  margin: 0 2%;
+  padding: 5px 0;
+  color: #000000;
+}
+
+.programm__title{
+  font-family: 'Acrom-ExtraBold';
+  @include font-size(12pt);
+  margin: 0 2%; 
+  margin-bottom: 30px;     
+  color: #fff; 
+  background-color: #000;
+  line-height: 45px;
+} 
+
+.text__inform {
+  position: relative;
+  margin: 0 2%;
+  padding-left: 76px;
+  padding-bottom: 30px;
+  width: 234px;
+  font-family:'Acrom-ExtraBold';
+  font-size: 13.5px; 
+}
+
+.icon__dash::after {
+  content: '';
+  position: absolute;
+  width: 42px;
+  height: 5px;
+  background:#000000;
+  top: 7px;
+  left: 21px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.introduction__part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 12px;
+  margin: 0 2%;
+}
+
+.introduction__part--text {
+  position: relative;
+  padding-top: 40px;
+  width: 320px;
+}
+
+.icon__square::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #000000;
+  margin-top: 15px;
+}
+
+.subtitle {
+  font-family: 'Acrom-ExtraBold';
+  font-size: 24px;
+  color: #000000;
+  padding-bottom: 18px;
+}
+
+.general__inform,
+.general__inform--second {
+font-family: 'AcromRegular';
+font-size: 14px;
+color: #000000;
+line-height: 1.5; 
+}
+
+.general__inform--second {
+  margin: 20px 0;
+}
+
+
+  
+
+
