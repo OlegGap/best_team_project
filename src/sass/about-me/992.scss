@@ -1,0 +1,25 @@
+@media screen and (min-width:991px) { 
+  .slider-record { 
+
+    &__inner {
+      min-width: 960px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__main {
+      width: 480px;
+    }
+
+    &__wrapper {
+      width: 410px;
+    }
+
+    &__wrapper-text {
+      width: 295px;
+      margin: 0 auto;
+      font-family: 'AcromRegular';
+      font-size: 1.0418rem;
+    }
+  }
+}

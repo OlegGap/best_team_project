@@ -1,0 +1,16 @@
+@media screen and (min-width: 480px) {
+  .skills {
+    .wrapper {
+
+    }
+
+    &__text {
+      width: 65%;
+
+      &::after {
+        width: 56px;
+        left: -27%;
+      }
+    }
+  }
+}
