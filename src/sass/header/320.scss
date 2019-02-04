@@ -1,0 +1,44 @@
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    margin: 0 2%;
+    overflow: hidden;
+}
+
+.page__nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.list__item,
+.list__item--link {
+    font-family: 'AcromMedium',sans-serif;
+    font-weight: bold; 
+    font-size: 10px;
+    padding: 3px 0;
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.list__item--link {
+    position: relative;
+    margin-right: 5px;
+}
+
+.icon {
+    display: inline-block;
+    position: absolute;    
+    direction:rtl;
+    width: 10px;
+    right: 108px;
+}
+
+.icon--source {
+    right: 100px;
+}
+
