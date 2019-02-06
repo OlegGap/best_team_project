@@ -1,9 +1,8 @@
 .skills {
   .wrapper {
     width: 94%;
-    min-width: 320px;
     margin: 0 auto;
-    padding: 40px 3%;
+    padding: 0 3% 40px;
     position: relative;
 
     
@@ -11,7 +10,7 @@
       content: '';
       display: none;
       position: absolute;
-      background-image: url(../../images/man-laptop.png);
+      background-image: url(../build/images/man-laptop.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -49,7 +48,7 @@
       width: 36px;
       height: 8px;
       background-color: #000;
-      top: 4%;
+      top: 8%;
       left: -23%;
     }
   }
