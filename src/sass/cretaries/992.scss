@@ -8,19 +8,17 @@
     }
 
     &__header {
-      width: 480px;
+      width: 370px;
       line-height: 50px;
     }
 
     &__photo {
-      width: 375px;
+      width: 350px;
     }
-  
-    .slider__item {
-      flex: 0 0 33.333333%;
-      max-width: 33.333333%;
+    
+    .slider-2 {
+      width: 95%;
+      max-width: 100%;
     }
-
-  
   } 
 }
