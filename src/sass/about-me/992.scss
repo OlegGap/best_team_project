@@ -17,9 +17,7 @@
 
     &__wrapper-text {
       width: 295px;
-      margin: 0 auto;
-      font-family: 'AcromRegular';
-      font-size: 1.0418rem;
+      @include text;
     }
   }
 }
