@@ -16,3 +16,11 @@
     }
     line-height: 25px;
 }
+
+@mixin text-big {
+    font: {
+        family: 'AcromRegular';
+        size: 1.35rem;
+    }
+    line-height: 35px;
+}

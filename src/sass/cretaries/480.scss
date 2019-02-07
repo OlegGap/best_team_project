@@ -5,9 +5,15 @@
       line-height: 40px;
     }
 
-    .slider__item {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
+    .slider__text-2 {
+    margin-left: 2%;
+
+      &::before {
+        top: 30px;
+        line-height: 18px;
+        font-size: 16px;
+        left: -45px;
+      }
   }
+}
 }
