@@ -1,4 +1,4 @@
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .cretaries {
     &-wrapper {
 
@@ -10,15 +10,17 @@
 
     &__main {
       display: flex;
-      justify-content: space-around;
-    }
-
-    &__tittle {
-
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
     }
 
     &__photo {
       display: block;
+    }
+
+    .slider-2 {
+      width: 90%;
     }
   }
 }

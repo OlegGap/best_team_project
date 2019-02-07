@@ -21,11 +21,11 @@
       return function (selector, config) {
         var
           _mainElement = document.querySelector(selector),
-          _sliderWrapper = _mainElement.querySelector('.slider__wrapper-1'),
-          _sliderItems = _mainElement.querySelectorAll('.slider__item-1'),
-          _sliderControls = _mainElement.querySelectorAll('.slider__control-1'),
-          _sliderControlLeft = _mainElement.querySelector('.slider__control_left-1'),
-          _sliderControlRight = _mainElement.querySelector('.slider__control_right-1'),
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper-2'),
+          _sliderItems = _mainElement.querySelectorAll('.slider__item-2'),
+          _sliderControls = _mainElement.querySelectorAll('.slider__control-2'),
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left-2'),
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right-2'),
           _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width),
           _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width),
           _html = _mainElement.innerHTML,
@@ -43,7 +43,7 @@
           _config = {
             isCycling: false,
             direction: 'right',
-            interval: 5000,
+            interval: 3000,
             pause: true
           };
 
@@ -143,8 +143,8 @@
         }
 
         var _controlClick = function (e) {
-          if (e.target.classList.contains('slider__control-1')) {
-            var direction = e.target.classList.contains('slider__control_right-1') ? 'right' : 'left';
+          if (e.target.classList.contains('slider__control-2')) {
+            var direction = e.target.classList.contains('slider__control_right-2') ? 'right' : 'left';
             _transformItem(direction);
             clearInterval(_interval);
             _cycle(_config.direction);
@@ -163,11 +163,11 @@
         var _refresh = function () {
           clearInterval(_interval);
           _mainElement.innerHTML = _html;
-          _sliderWrapper = _mainElement.querySelector('.slider__wrapper-1');
-          _sliderItems = _mainElement.querySelectorAll('.slider__item-1');
-          _sliderControls = _mainElement.querySelectorAll('.slider__control-1');
-          _sliderControlLeft = _mainElement.querySelector('.slider__control_left-1');
-          _sliderControlRight = _mainElement.querySelector('.slider__control_right-1');
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper-2');
+          _sliderItems = _mainElement.querySelectorAll('.slider__item-2');
+          _sliderControls = _mainElement.querySelectorAll('.slider__control-2');
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left-2');
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right-2');
           _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width);
           _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width);
           _positionLeftItem = 0;
@@ -234,6 +234,6 @@
       }
     }());
 
-    var slider = multiItemSlider('.slider-1', {
+    var slider = multiItemSlider('.slider-2', {
       isCycling: true
     })

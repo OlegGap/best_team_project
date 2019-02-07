@@ -2,22 +2,35 @@
   .cretaries {
     &__tittle {
       font-size: 4em;
-      line-height: 80px;
+      line-height: 70px;
       width: 810px;
     }
-  
-    .slider__item {
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
 
-    &__media {
-      width: 25%;
+    &__slaider {
+      width: 80%;
+      margin: 0 auto;
     }
     
-    &__slaider {
-      width: 60%;
-      margin: 0 auto;
+    &__photo {
+      width: 400px;
+    }
+    
+    .slider__text-2 {
+      @include text-big;
+    }
+
+    .slider-2 {
+      width: 80%;
+    }
+
+    .slider__text-2 {
+
+      &::before {
+        top: 25px;
+        line-height: 24px;
+        font-size: 20px;
+        left: -50px;
+      }
     }
   }
 }
