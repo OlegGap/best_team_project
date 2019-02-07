@@ -1,9 +1,5 @@
 @media screen and (min-width: 767px) {
   .cretaries {
-    &-wrapper {
-
-    }
-
     &__header {
       width: 465px;
     }
@@ -12,11 +8,6 @@
       display: flex;
       justify-content: space-around;
     }
-
-    &__tittle {
-
-    }
-
     &__photo {
       display: block;
     }

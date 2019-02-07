@@ -1,0 +1,36 @@
+@media screen and (min-width:961px){
+    body{
+    position: relative;
+        &::before{
+            position: absolute;
+            content: "GO IT";
+            font-family: 'Acrom-ExtraBold';
+            @include font-size(86pt);      
+            right: -15%;             
+            top: 800px;  
+            transform: rotate(90deg);
+            color: black;
+            color: #f7f7f7;
+            z-index: -1;
+        } 
+        &::after{ 
+            position: absolute;
+            content: "PROGRAMM"; 
+            font-family: 'Acrom-ExtraBold';
+            @include font-size(86pt);      
+            right: -40%;                 
+            bottom: 1900px;       
+            transform: rotate(90deg);
+            color: black;
+            color: #f7f7f7;
+            z-index: -1; 
+        } 
+    }
+}
+@media screen and (max-width:960px){
+    body{
+        &::before{
+            display: none; 
+        }
+    }
+}
