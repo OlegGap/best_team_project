@@ -1299,6 +1299,38 @@ textarea {
   .programm__title {
     font-size: 50.4pt;
   }
+
+  body {
+    position: relative;
+  }
+
+  body::before {
+    position: absolute;
+    content: "GO IT";
+    font-family: 'Acrom-ExtraBold';
+    font-size: 172pt;
+    right: -15%;
+    top: 800px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: black;
+    color: #f7f7f7;
+    z-index: -1;
+  }
+
+  body::after {
+    position: absolute;
+    content: "PROGRAMM";
+    font-family: 'Acrom-ExtraBold';
+    font-size: 172pt;
+    right: -40%;
+    bottom: 1900px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: black;
+    color: #f7f7f7;
+    z-index: -1;
+  }
 }
 
 @media screen and (min-width: 991px) {
@@ -1427,6 +1459,12 @@ textarea {
 
   .skills__text::after {
     left: -16%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body::before {
+    display: none;
   }
 }
 

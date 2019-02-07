@@ -1,19 +1,20 @@
 @media screen and (min-width: 768px) {
   .cretaries {
-    &-wrapper {
-
-    }
-
     &__header {
       width: 465px;
     }
 
     &__main {
       display: flex;
+
+      justify-content: space-around;
+    }
+
       justify-content: space-between;
       align-items: center;
       padding: 40px 0;
     }
+
 
     &__photo {
       display: block;

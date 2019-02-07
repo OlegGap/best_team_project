@@ -7,7 +7,15 @@
 
   &__tittle {
     @include tittle;
+
+    margin-bottom: 35px; 
+  }
+
+  &__media {
+    width: 35%;
+
     margin-top: 40px;
+
   }
 
   &__photo {
