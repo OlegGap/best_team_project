@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 90px;
-    margin: 0 2%;
+    margin-top: 30px;
+    margin-bottom: 82px;
+    padding-left: 3%;
     overflow: hidden;
+    min-width: 320px;
 }
 
 .page__nav {
@@ -23,22 +24,38 @@
     color: #000000;
     text-decoration: none;
     line-height: 1.5;
+    &:hover {
+        color: #ef742f;
+        transition: 0.3s;
+        cursor: pointer;
+        &--link {
+           position: relative;
+           margin-right: 5px;
+        }
+    }
 }
 
-.list__item--link {
-    position: relative;
-    margin-right: 5px;
+.list__item--burger{
+    width: 130px;   
+    display: flex; 
+    flex-direction: row; 
+    &:hover{
+    color: #ef742f;
+    transition: 0.3s;
+    cursor: pointer;
+    }
 }
-
+.main__link{
+    width: 130px;   
+    display: flex; 
+    flex-direction: row;  
+}
 .icon {
-    display: inline-block;
-    position: absolute;    
-    direction:rtl;
+    margin-right: 5px;   
     width: 10px;
-    right: 108px;
 }
 
 .icon--source {
-    right: 100px;
+    margin-right: 10px;  
 }
 

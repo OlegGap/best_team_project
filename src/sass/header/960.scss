@@ -1,0 +1,32 @@
+@media screen and (min-width:960px) {
+    .page__header {
+        max-width: 960px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 80px;
+        padding-left: 3%;
+        padding-right: 3%; 
+    }
+
+    .page__nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .list__item--link {
+        padding-right: 34px;
+    }
+
+    .icon {
+        right: 134px;
+    }
+
+    .icon--source {
+        right: 234px;
+    }
+
+
+
+
+}
