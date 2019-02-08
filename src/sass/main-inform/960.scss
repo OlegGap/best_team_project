@@ -1,11 +1,29 @@
-@media screen and (min-width:961px) {
-    .section__first {  
+@media screen and (min-width:960px) {
+    .section__first {
+        overflow: hidden;
         min-width: 960px;
         width: 80%;
-        max-width: 1440px;   
-    } 
-    
-    .main__title--word {
-font-size: 24px; 
+        max-width: 1440px;
     }
+
+    .inform__title {
+        @include tittle;
+    } 
+
+    .picture {
+        background: #000000;
+        height: 484px;
+    }
+
+    .picture__first { 
+        width: 424px; 
+        height: 460px;
+    }
+
+    .introduction__part--text {
+        width: 424px;
+        height: 460px;
+        line-height: 1.5;
+    }
+
 }

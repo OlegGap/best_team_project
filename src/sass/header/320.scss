@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 90px;
-    margin: 0 2%;
+    margin-top: 30px;
+    margin-bottom: 82px;
+    padding-left: 3%;
     overflow: hidden;
+    min-width: 320px;
 }
 
 .page__nav {
@@ -25,9 +26,20 @@
     line-height: 1.5;
 }
 
-.list__item--link {
-    position: relative;
-    margin-right: 5px;
+.list__item--link:hover {
+    color: #ef742f;
+    transition: 0.3s;
+    cursor: pointer;
+       &--link {
+       position: relative;
+       margin-right: 5px;
+}
+}
+
+.list__item--burger:hover{
+    color: #ef742f;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .icon {
