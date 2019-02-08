@@ -24,33 +24,38 @@
     color: #000000;
     text-decoration: none;
     line-height: 1.5;
+    &:hover {
+        color: #ef742f;
+        transition: 0.3s;
+        cursor: pointer;
+        &--link {
+           position: relative;
+           margin-right: 5px;
+        }
+    }
 }
 
-.list__item--link:hover {
+.list__item--burger{
+    width: 130px;   
+    display: flex; 
+    flex-direction: row; 
+    &:hover{
     color: #ef742f;
     transition: 0.3s;
     cursor: pointer;
-       &--link {
-       position: relative;
-       margin-right: 5px;
+    }
 }
+.main__link{
+    width: 130px;   
+    display: flex; 
+    flex-direction: row;  
 }
-
-.list__item--burger:hover{
-    color: #ef742f;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 .icon {
-    display: inline-block;
-    position: absolute;    
-    direction:rtl;
+    margin-right: 5px;   
     width: 10px;
-    right: 108px;
 }
 
 .icon--source {
-    right: 100px;
+    margin-right: 10px;  
 }
 
