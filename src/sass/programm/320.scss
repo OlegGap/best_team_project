@@ -87,6 +87,7 @@
     height: 50px; /* высота кнопки */ 
     opacity: .5; /* прозрачность */
     background: #000; /* цвет фона */
+    cursor: pointer;
   }
   .slider__control_show {
     display: flex;

@@ -1,0 +1,25 @@
+@media screen and (min-width:1200px){
+    .page__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 960px;
+        width: 80%;
+        max-width: 1440px;
+    }
+
+    .list__item--link {
+        max-width: 1440px;
+        padding-right: 26px;
+    }
+
+    .icon {
+        max-width: 1440px;
+        right: 254px;
+    }
+
+    .icon--source {
+        max-width: 1440px;
+        right: 350px;
+    }
+}

@@ -1,11 +1,11 @@
 @media screen and (min-width:960px) {
     .page__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 960px;
-        width: 80%;
-        max-width: 1440px;
+        max-width: 960px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 80px;
+        padding-left: 3%;
+        padding-right: 3%; 
     }
 
     .page__nav {
@@ -15,21 +15,15 @@
     }
 
     .list__item--link {
-        max-width: 1440px;
-        padding-right: 26px;
-        /*padding-right: 34px;*/
+        padding-right: 34px;
     }
 
     .icon {
-        max-width: 1440px;
-        right: 254px;
-        /*right: 134px;*/
+        right: 134px;
     }
 
     .icon--source {
-        max-width: 1440px;
-        right: 350px;
-        /*right: 234px;*/
+        right: 234px;
     }
 
 
