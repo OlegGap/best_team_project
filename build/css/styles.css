@@ -784,7 +784,7 @@ textarea {
   content: '';
   display: none;
   position: absolute;
-  background-image: url(../build/images/man-laptop.png);
+  background-image: url(../images/man-laptop.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
