@@ -43,7 +43,7 @@
           _config = {
             isCycling: false,
             direction: 'right',
-            interval: 3000,
+            interval: 5000,
             pause: true
           };
 
