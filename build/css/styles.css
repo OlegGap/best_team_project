@@ -784,7 +784,7 @@ textarea {
   content: '';
   display: none;
   position: absolute;
-  background-image: url(../images/man-laptop.png);
+  background-image: url(../build/images/man-laptop.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1422,7 +1422,7 @@ textarea {
   }
 
   .programm__title {
-    font-size: 50.4pt;
+    font-size: 2.2918rem;
   }
 
   body {
@@ -1517,9 +1517,8 @@ textarea {
 
 @media screen and (min-width: 1199px) {
   .cretaries__tittle {
-    font-size: 4em;
-    line-height: 70px;
-    width: 810px;
+    line-height: 55px;
+    width: 610px;
   }
 
   .cretaries__slaider {
@@ -1582,8 +1581,7 @@ textarea {
   }
 
   .slider-record__tittle {
-    font-size: 4em;
-    line-height: 80px;
+    line-height: 55px;
   }
 
   .slider__text-1 {
@@ -1593,7 +1591,7 @@ textarea {
   }
 
   .skills .wrapper {
-    padding: 85px 3%;
+    padding: 25px 3%;
   }
 
   .skills .wrapper::after {
@@ -1602,9 +1600,8 @@ textarea {
   }
 
   .skills__tittle {
-    width: 500px;
-    font-size: 4em;
-    line-height: 85px;
+    width: 300px;
+    line-height: 55px;
   }
 
   .skills__text {
