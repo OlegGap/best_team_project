@@ -1,4 +1,4 @@
-.page__header {
+.headline__page {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,17 +9,19 @@
     min-width: 320px;
 }
 
-.page__nav {
+.headline__page--nav {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
 
-.list__item,
-.list__item--link {
+.list__item--first,
+.list__item--second,
+.list__item--third,
+.nav__link--item {
     font-family: 'AcromMedium',sans-serif;
     font-weight: bold; 
-    font-size: 10px;
+    font-size: 11px;
     padding: 3px 0;
     color: #000000;
     text-decoration: none;
@@ -35,17 +37,15 @@
     }
 }
 
-.list__item--burger{
+.list__item--first,
+.list__item--second,
+.list__item--third {
     width: 130px;   
     display: flex; 
-    flex-direction: row; 
-    &:hover{
-    color: #ef742f;
-    transition: 0.3s;
-    cursor: pointer;
-    }
+    flex-direction: row;
 }
-.main__link{
+
+.nav__link{
     width: 130px;   
     display: flex; 
     flex-direction: row;  
@@ -55,7 +55,7 @@
     width: 10px;
 }
 
-.icon--source {
+.icon__source {
     margin-right: 10px;  
 }
 

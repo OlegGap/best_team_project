@@ -1,6 +1,6 @@
 .programm__title{
     font-family: 'Acrom-ExtraBold';
-    @include font-size(12pt);
+    @include tittle; 
     margin-left: 2%;      
     color: #fff; 
     background-color: #000;
@@ -47,7 +47,7 @@
 } 
 .programm__text--1, .programm__text--2, .programm__text--3{
   font-family: 'AcromRegular'; 
-  font-size: 10pt;
+  font-size: 10pt; 
 }
 .programm__text--1, .programm__text--2{
   margin-top: 15px;

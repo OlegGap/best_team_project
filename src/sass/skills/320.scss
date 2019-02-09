@@ -21,15 +21,13 @@
     }
   }
 
-  &__content {
-    @include text;
-  }
+ 
 
   &__tittle {
     width: 305px;
     margin-bottom: 30px;
     line-height: 50px;
-    @include tittle;
+    @include subtittle;
 
     &--bg {
       background-color: #000;
@@ -38,6 +36,7 @@
     }
   }
   &__text {
+      @include text;
       position: relative;
       width: 75%;
       margin: 0 0 0 20%;

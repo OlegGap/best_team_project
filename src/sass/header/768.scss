@@ -1,5 +1,5 @@
 @media screen and (min-width:768px) {
-   .page__header {
+   .headline__page {
     max-width: 768px;
     margin: 0 auto;
     padding-top: 30px;
@@ -8,7 +8,7 @@
     padding-right: 3%;
    }
    
-    .list__item--link {
+    .nav__link--item {
         padding-right: 10px;
     }
 
@@ -16,7 +16,7 @@
         right: 128px;
     }
 
-    .icon--source {
+    .icon__source {
         right: 122px;
     }
 
