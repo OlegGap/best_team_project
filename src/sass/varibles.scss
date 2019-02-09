@@ -1,26 +1,45 @@
 @mixin font-size($font-size){
     font-size: ($font-size * 2);
 }
-
+ 
 @mixin tittle {
-    font: {
-        family: 'Acrom-ExtraBold';
-        size: 2.2918rem;
+        font-family: 'Acrom-ExtraBold';
+        font-size: 32px;
+    
+    @media screen and (min-width: 480px) {
+            font-size: 48px; 
+    }
+    @media screen and (min-width:961px) { 
+            font-size: 64px;
     }
 }
 
-@mixin text {
-    font: {
-        family: 'AcromRegular';
-        size: 1.041rem;
+@mixin subtittle {
+        font-family: 'Acrom-ExtraBold';
+        font-size: 32px;
+    
+    @media screen and (min-width: 480px) {
+            font-size: 38px;        
+    }
+}
+
+@mixin text-bold {
+        font-family: 'Acrom-ExtraBold';
+        font-size: 14px;
+    @media screen and (min-width: 480px) {
+        font-size: 18px;
     }
     line-height: 25px;
 }
 
-@mixin text-big {
-    font: {
-        family: 'AcromRegular';
-        size: 1.35rem;
+@mixin text {
+        font-family: 'AcromRegular';
+        font-size: 14px;
+    @media screen and (min-width: 480px) {
+            font-size: 18px;
     }
-    line-height: 35px;
+    line-height: 25px;
+}
+@mixin text-big{
+    
 }

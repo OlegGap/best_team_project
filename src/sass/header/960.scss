@@ -1,5 +1,5 @@
 @media screen and (min-width:960px) {
-    .page__header {
+    .headline__page {
         max-width: 960px;
         margin: 0 auto;
         padding-top: 30px;
@@ -8,13 +8,13 @@
         padding-right: 3%; 
     }
 
-    .page__nav {
+    .headline__page--nav {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
     }
 
-    .list__item--link {
+    .nav__link--item {
         padding-right: 34px;
     }
 
@@ -22,7 +22,7 @@
         right: 134px;
     }
 
-    .icon--source {
+    .icon__source {
         right: 234px;
     }
 

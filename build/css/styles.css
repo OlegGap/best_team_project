@@ -500,7 +500,7 @@ textarea {
     Blocks
 */
 
-.page__header {
+.headline__page {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -511,49 +511,51 @@ textarea {
   min-width: 320px;
 }
 
-.page__nav {
+.headline__page--nav {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
-.list__item,
-.list__item--link {
+.list__item--first,
+.list__item--second,
+.list__item--third,
+.nav__link--item {
   font-family: 'AcromMedium',sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   padding: 3px 0;
   color: #000000;
   text-decoration: none;
   line-height: 1.5;
 }
 
-.list__item:hover,
-.list__item--link:hover {
+.list__item--first:hover,
+.list__item--second:hover,
+.list__item--third:hover,
+.nav__link--item:hover {
   color: #ef742f;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.list__item:hover--link,
-.list__item--link:hover--link {
+.list__item--first:hover--link,
+.list__item--second:hover--link,
+.list__item--third:hover--link,
+.nav__link--item:hover--link {
   position: relative;
   margin-right: 5px;
 }
 
-.list__item--burger {
+.list__item--first,
+.list__item--second,
+.list__item--third {
   width: 130px;
   display: flex;
   flex-direction: row;
 }
 
-.list__item--burger:hover {
-  color: #ef742f;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.main__link {
+.nav__link {
   width: 130px;
   display: flex;
   flex-direction: row;
@@ -564,7 +566,7 @@ textarea {
   width: 10px;
 }
 
-.icon--source {
+.icon__source {
   margin-right: 10px;
 }
 
@@ -577,7 +579,7 @@ textarea {
 
 .main__title--word {
   font-family: 'Acrom-ExtraBold';
-  font-size: 2.2918rem;
+  font-size: 32px;
   padding: 5px 0;
   color: #000000;
 }
@@ -603,6 +605,7 @@ textarea {
   padding-bottom: 30px;
   font-family: 'Acrom-ExtraBold';
   font-size: 14px;
+  line-height: 25px;
 }
 
 .text__inform--description {
@@ -614,7 +617,7 @@ textarea {
   position: absolute;
   width: 36px;
   height: 8px;
-  background: #000000;
+  background: #000;
   top: 10px;
   left: 21px;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -654,7 +657,7 @@ textarea {
 .general__inform,
 .general__inform--second {
   font-family: 'AcromRegular';
-  font-size: 1.041rem;
+  font-size: 14px;
   line-height: 25px;
   color: #000000;
   line-height: 1.5;
@@ -675,12 +678,12 @@ textarea {
 }
 
 .slider-record__wrapper-tittle {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .slider-record__tittle {
   font-family: 'Acrom-ExtraBold';
-  font-size: 2.2918rem;
+  font-size: 32px;
 }
 
 .slider-1 {
@@ -713,7 +716,7 @@ textarea {
 
 .slider__text-1 {
   font-family: 'AcromRegular';
-  font-size: 1.041rem;
+  font-size: 14px;
   line-height: 25px;
   position: relative;
 }
@@ -794,18 +797,12 @@ textarea {
   right: 0;
 }
 
-.skills__content {
-  font-family: 'AcromRegular';
-  font-size: 1.041rem;
-  line-height: 25px;
-}
-
 .skills__tittle {
   width: 305px;
   margin-bottom: 30px;
   line-height: 50px;
   font-family: 'Acrom-ExtraBold';
-  font-size: 2.2918rem;
+  font-size: 32px;
 }
 
 .skills__tittle--bg {
@@ -815,6 +812,9 @@ textarea {
 }
 
 .skills__text {
+  font-family: 'AcromRegular';
+  font-size: 14px;
+  line-height: 25px;
   position: relative;
   width: 75%;
   margin: 0 0 0 20%;
@@ -838,7 +838,7 @@ textarea {
 
 .cretaries__tittle {
   font-family: 'Acrom-ExtraBold';
-  font-size: 2.2918rem;
+  font-size: 32px;
   margin-bottom: 35px;
 }
 
@@ -883,7 +883,7 @@ textarea {
 
 .cretaries .slider__text-2 {
   font-family: 'AcromRegular';
-  font-size: 1.041rem;
+  font-size: 14px;
   line-height: 25px;
   position: relative;
 }
@@ -947,7 +947,8 @@ textarea {
 
 .programm__title {
   font-family: 'Acrom-ExtraBold';
-  font-size: 24pt;
+  font-family: 'Acrom-ExtraBold';
+  font-size: 32px;
   margin-left: 2%;
   color: #fff;
   background-color: #000;
@@ -1165,12 +1166,49 @@ textarea {
 }
 
 @media screen and (min-width: 480px) {
+  .main__title--word {
+    font-size: 48px;
+  }
+
+  .inform__title {
+    font-size: 48px;
+  }
+
+  .text__inform {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 38px;
+  }
+
+  .general__inform,
+  .general__inform--second {
+    font-size: 18px;
+  }
+
+  .slider-record__tittle {
+    font-size: 38px;
+  }
+
+  .slider__text-1 {
+    font-size: 18px;
+  }
+
   .slider-record__main {
     width: 380px;
   }
 
   .slider-record__wrapper {
     width: 230px;
+  }
+
+  .skills__tittle {
+    font-size: 38px;
+  }
+
+  .skills__text {
+    font-size: 18px;
   }
 
   .skills__text {
@@ -1180,6 +1218,18 @@ textarea {
   .skills__text::after {
     width: 56px;
     left: -27%;
+  }
+
+  .cretaries__tittle {
+    font-size: 38px;
+  }
+
+  .cretaries .slider__text-2 {
+    font-size: 18px;
+  }
+
+  .programm__title {
+    font-size: 48px;
   }
 }
 
@@ -1211,7 +1261,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .page__header {
+  .headline__page {
     max-width: 768px;
     margin: 0 auto;
     padding-top: 30px;
@@ -1220,7 +1270,7 @@ textarea {
     padding-right: 3%;
   }
 
-  .list__item--link {
+  .nav__link--item {
     padding-right: 10px;
   }
 
@@ -1228,7 +1278,7 @@ textarea {
     right: 128px;
   }
 
-  .icon--source {
+  .icon__source {
     right: 122px;
   }
 
@@ -1241,7 +1291,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   .text__inform {
@@ -1260,7 +1310,7 @@ textarea {
 
   .inform__title {
     font-family: 'Acrom-ExtraBold';
-    font-size: 2.2918rem;
+    font-size: 32px;
   }
 
   .text__inform {
@@ -1322,8 +1372,26 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 480px) {
+  .inform__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 961px) {
+  .inform__title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 960px) and (min-width: 480px) {
+  .inform__title {
+    font-size: 48px;
+  }
+}
+
 @media screen and (min-width: 960px) {
-  .page__header {
+  .headline__page {
     max-width: 960px;
     margin: 0 auto;
     padding-top: 30px;
@@ -1332,13 +1400,13 @@ textarea {
     padding-right: 3%;
   }
 
-  .page__nav {
+  .headline__page--nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
   }
 
-  .list__item--link {
+  .nav__link--item {
     padding-right: 34px;
   }
 
@@ -1346,7 +1414,7 @@ textarea {
     right: 134px;
   }
 
-  .icon--source {
+  .icon__source {
     right: 234px;
   }
 
@@ -1359,7 +1427,7 @@ textarea {
 
   .inform__title {
     font-family: 'Acrom-ExtraBold';
-    font-size: 2.2918rem;
+    font-size: 32px;
   }
 
   .picture {
@@ -1379,7 +1447,25 @@ textarea {
   }
 }
 
+@media screen and (min-width: 960px) and (min-width: 961px) {
+  .inform__title {
+    font-size: 64px;
+  }
+}
+
 @media screen and (min-width: 961px) {
+  .main__title--word {
+    font-size: 64px;
+  }
+
+  .inform__title {
+    font-size: 64px;
+  }
+
+  .programm__title {
+    font-size: 64px;
+  }
+
   .programm {
     margin-top: 80px;
   }
@@ -1419,10 +1505,6 @@ textarea {
   .slider__item {
     width: 33.33%;
     margin-top: 50px;
-  }
-
-  .programm__title {
-    font-size: 2.2918rem;
   }
 
   body {
@@ -1476,7 +1558,7 @@ textarea {
   .slider-record__wrapper-text {
     width: 295px;
     font-family: 'AcromRegular';
-    font-size: 1.041rem;
+    font-size: 14px;
     line-height: 25px;
   }
 
@@ -1499,6 +1581,12 @@ textarea {
   .cretaries .slider-2 {
     width: 95%;
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 991px) and (min-width: 480px) {
+  .slider-record__wrapper-text {
+    font-size: 18px;
   }
 }
 
@@ -1530,12 +1618,6 @@ textarea {
     width: 400px;
   }
 
-  .cretaries .slider__text-2 {
-    font-family: 'AcromRegular';
-    font-size: 1.35rem;
-    line-height: 35px;
-  }
-
   .cretaries .slider-2 {
     width: 80%;
   }
@@ -1549,7 +1631,7 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .page__header {
+  .headline__page {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1558,7 +1640,7 @@ textarea {
     max-width: 1440px;
   }
 
-  .list__item--link {
+  .nav__link--item {
     max-width: 1440px;
     padding-right: 26px;
   }
@@ -1568,7 +1650,7 @@ textarea {
     right: 254px;
   }
 
-  .icon--source {
+  .icon__source {
     max-width: 1440px;
     right: 350px;
   }
@@ -1584,12 +1666,6 @@ textarea {
     line-height: 55px;
   }
 
-  .slider__text-1 {
-    font-family: 'AcromRegular';
-    font-size: 1.35rem;
-    line-height: 35px;
-  }
-
   .skills .wrapper {
     padding: 25px 3%;
   }
@@ -1602,12 +1678,6 @@ textarea {
   .skills__tittle {
     width: 300px;
     line-height: 55px;
-  }
-
-  .skills__text {
-    font-family: 'AcromRegular';
-    font-size: 1.35rem;
-    line-height: 35px;
   }
 
   .skills__text::after {
@@ -1710,9 +1780,5 @@ textarea {
   .slider__item {
     flex: 0 0 50%;
     max-width: 50%;
-  }
-
-  .programm__title {
-    font-size: 33.6pt;
   }
 }

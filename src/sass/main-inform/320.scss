@@ -12,11 +12,10 @@
 }
 
 .inform__title {
-  font-family:'Acrom-ExtraBold';
-  font-size: 32px; 
+  @include tittle;
   margin-bottom: 30px;
-  padding: 5px 0;    
-  color: #ffffff; 
+  padding: 5px 0;  
+  color: #ffffff;
   line-height: 45px;
 } 
 
@@ -30,8 +29,7 @@
   position: relative;
   padding-left: 76px;
   padding-bottom: 30px;
-  font-family:'Acrom-ExtraBold';
-  font-size: 14px; 
+  @include text-bold;
   &--description {
     line-height: 1.5;
   }
@@ -42,7 +40,7 @@
   position: absolute;
   width: 36px;
   height: 8px;
-  background:#000000;
+  background:#000;
   top: 10px;
   left: 21px;
   transform: translateX(-50%) translateY(-50%);
@@ -72,8 +70,7 @@
 }
 
 .subtitle {
-  font-family:'Acrom-ExtraBold';
-  font-size: 32px; 
+  @include subtittle;  
   color: #000000;
   padding-bottom: 18px;
 }

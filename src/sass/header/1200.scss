@@ -1,5 +1,5 @@
 @media screen and (min-width:1200px){
-    .page__header {
+    .headline__page {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -8,7 +8,7 @@
         max-width: 1440px;
     }
 
-    .list__item--link {
+    .nav__link--item {
         max-width: 1440px;
         padding-right: 26px;
     }
@@ -18,7 +18,7 @@
         right: 254px;
     }
 
-    .icon--source {
+    .icon__source {
         max-width: 1440px;
         right: 350px;
     }
