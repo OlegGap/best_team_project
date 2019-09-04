@@ -7,6 +7,7 @@ You can see production version this site [here](https://oleggap.github.io/best_t
 ## Requirements
 - HTML5
 - SCSS
+- JavaScript
 - Gulp
 ## Installation
 ```bash
