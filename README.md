@@ -1,6 +1,8 @@
 # Landing page "GoIT"
 
-Team project on HTML5, SCSS
+###### Team project on HTML5, SCSS
+
+You can see production version this site [here](https://oleggap.github.io/best_team_project/build/index.html).
 
 ## Requirements
 - HTML5
