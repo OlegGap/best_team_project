@@ -1,4 +1,4 @@
-# Leanding Page "GoIT"
+# Landing page "GoIT"
 
 Team project on HTML5, SCSS
 
